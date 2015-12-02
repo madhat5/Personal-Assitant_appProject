@@ -1,31 +1,20 @@
-# Personal-Assitant_appProject
-
-PROJECT 3
----
----
-
-GROUP# Team Drogon
-
-- Members:
-	- Jeff
-	- Justin
-	- David
+# Personal Growth Assistant - Final mini-Project #1
 ---
 
 Links:
 
 - Instructions:
-	- https://github.com/madhat5/wdi_lettuce_students/blob/master/projects/project3/project3_prompt.md
+	- https://github.com/ga-students/wdi_lettuce_students/blob/master/schedule.md
 
 - Project:
 	- GitHub
-		- https://github.com/JMARCHESENYC/Group-Project
+		- https://github.com/madhat5/Personal-Assitant_appProject
 	- Heroku
-		- https://intense-wave-8057.herokuapp.com/
+		- 
 	- Trello link
-		- https://trello.com/b/t0tm1Sd3
+		- https://trello.com/b/79qQIpKD/wdi-project-4a-jmny
 	- Wireframes
-		- https://moqups.com/jeffkral/KvwcN460/p:a16b2c2a4
+		- 
 
 ---
 Technical Requirements:
@@ -38,91 +27,56 @@ Your app must:
 - Include all major CRUD functions in a RESTful API for at least one of those models
 - Consume your own API by making your front-end with HTML, Javascript, & jQuery
 - Add authentication to your API to restrict access to appropriate users
-- Craft thoughtful user stories together, as a team
-- Manage team contributions and collaboration using a standard Git flow on Github
 - Layout and style your front-end with clean & well-formatted CSS
 - Deploy your application online so it's publically accessible
 
-Necessary Deliverables:
-
-- A working API, hosted somewhere on the internet
-- A handmade front-end that consumes your own API, hosted somewhere on the internet
-- A link to your hosted working app in the URL section of your Github repo
-- A team git repository hosted on Github, with a link to your hosted project, and frequent commits from every team member dating back to the very beginning of the project
-- A readme.md file with:
-	- Explanations of the technologies used
-	- A couple paragraphs about the general approach you took
-	- Installation instructions for any dependencies
-	- Link to your user stories – who are your users, what do they want, and why?
-	- Link to your wireframes – sketches of major views / interfaces in your application
-	- Descriptions of any unsolved problems or major hurdles your team had to overcome
-
 ---
-Team organization-
-
-Roles:
-
-- Justin
-	- Git Czar
-- Jeff
-	- Mockups Czar
-- David
-	- Trello Czar
-
-
 Timeline goals:
 
-- Friday 11/16
-	- git flow --x--
-	- User story --x--
-	- trello --x--
-	- skeleton
-- Tuesday 11/24
-	- Mini MVP
-	- (functioning app with at least 1 route)
-- Saturday 11/28
-	- +features complete
-- Monday 11/30
-	- Full app done
+- Wed 12/2 --x--
+	- Start planning Rails app today (and others)
+- Sat 12/5
+	- Rails app finished during the weekend
+- Sun 12/6 --o--
+	- Start planning Mean App 
+- Wed 12/9
+	- Mean app finished 
+- Thu 12/10
+	- Final project planning
+- Thu 12/17	
+	- Final project finished
 
-
-Sync schedule:
-
-- Sunday 11/22
-- Wednesday 11/25
-- Friday 11/27
-- Saturday 11/25
-
-Slack Channel: Yes
 
 Git flow:
 
-- Justin is Czar
 - Steps:
-	- git clone git@github.com:JMARCHESENYC/Group-Project.git
-	- Team pulls @ beginning of day
+	- git clone
+	- Create development branch
 		- from master
+			- git checkout -b development		
+	- Pull @ beginning of day
+		- from development
 			- git pull origin master
-			- (npm install)
-	- Team creates 1 branch per file task
-		- from master
-			- git checkout -b name_feature
-	- Team pushes by end of day 
+			- (npm install) if needed
+	- Create 1 branch per file task
+		- from development
+			- git checkout -b staging_file-feature
+	- Push by end of day 
 		- from branch
 			- git add .
 			- git commit -m "update details"
-			- git checkout master
-			- git pull origin master (checks for conflict)
-			- git checkout branch_name
-			- git merge master
-			- >>fix merge conflicts
-			- git add .
-			- git commit -m "update details"
 			- git push origin name_feature
-			- git checkout master
-			- ??pull request??
-		- slack note when pushed
-	- Justin merges end of day
+			- (gitHub
+				- Pull request)
+			- OR
+			- (git push origin development)
+			- git checkout development
+		- from development
+			- (gitHub
+				- Pull request)
+			- OR
+			- git push origin master
+	- merge end of day
 
 ---
 User story:
