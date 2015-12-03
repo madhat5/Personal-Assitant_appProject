@@ -80,7 +80,14 @@ Models:
 - user
 	- stormpath
 	- goal (embed or ref)
+	- score/points?
+		- (sum of goal.score)
 - goal
+	- title: String
+	- objectives: {String, boolean}
+	- score: Number 
+		- (3pts for completing day1, 1pt day2; 0 pts and dropped day3)
+		- (each goal has score)
 
 User story:
 
