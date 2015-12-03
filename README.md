@@ -61,12 +61,13 @@ Deployment flow:
 		- git add .
 		- git commit -m "update details"
 		- git push origin file_feature
+	- from development
 		- (gitHub
 			- Pull request)
 		- OR
 		- (git push origin development)
 		- git checkout development
-	- from development
+	- from master
 		- (gitHub
 			- Pull request)
 		- OR
