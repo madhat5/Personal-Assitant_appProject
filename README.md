@@ -46,11 +46,9 @@ Timeline goals:
 - Thu 12/17	
 	- Final project finished
 
+--
 
-Git flow:
-
-- Steps:
-	- git clone
+- Git flow:
 	- Create development branch
 		- from master
 			- git checkout -b development		
@@ -58,14 +56,14 @@ Git flow:
 		- from development
 			- git pull origin master
 			- (npm install) if needed
-	- Create 1 branch per file task
+	- Create 1 branch per file feature
 		- from development
-			- git checkout -b staging_file-feature
-	- Push by end of day 
+			- git checkout -b file_feature
+	- By end of day 
 		- from branch
 			- git add .
 			- git commit -m "update details"
-			- git push origin name_feature
+			- git push origin file_feature
 			- (gitHub
 				- Pull request)
 			- OR
@@ -75,8 +73,7 @@ Git flow:
 			- (gitHub
 				- Pull request)
 			- OR
-			- git push origin master
-	- merge end of day
+			- (git push origin master)
 
 ---
 User story:
@@ -119,6 +116,13 @@ MVP:
 ---
 ---
 App Build Steps:
+
+- yo ...
+
+- stormpath
+- angular
+
+
 
 - touch server.js --x--
 
@@ -219,8 +223,7 @@ App Build Steps:
 
 - CSS --o--
 
-- [seed 1 user + task --o--
-	- node server.js]
+- node server.js
 
 
 ---
