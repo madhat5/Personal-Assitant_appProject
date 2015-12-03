@@ -1,4 +1,4 @@
-# Personal Growth Assistant - Final mini-Project #1
+# Personal Assistant - Final mini-Project #1
 ---
 
 Links:
@@ -10,7 +10,7 @@ Links:
 	- GitHub
 		- https://github.com/madhat5/Personal-Assitant_appProject
 	- Wireframes
-		- 
+		- https://moqups.com/#!/edit/madhat5/jR69snL3
 	- Trello link
 		- https://trello.com/b/79qQIpKD/wdi-project-4a-jmny
 	- Heroku
