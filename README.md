@@ -19,9 +19,6 @@ Links:
 ---
 Technical Requirements:
 
-
-Your app must:
-
 - Use Mongo & Express to build an API and a front-end that consumes it
 - Create an API using at least 2 related models, one of which should be a user
 - Include all major CRUD functions in a RESTful API for at least one of those models
@@ -76,9 +73,16 @@ Deployment flow:
 		- (git push origin master)
 
 ---
-User story:
+MVP
 
-MVP:
+Models:
+
+- user
+	- stormpath
+	- goal (embed or ref)
+- goal
+
+User story:
 
 - MOAR MODALS!!!
 
