@@ -62,6 +62,7 @@ Deployment flow:
 		- git commit -m "update details"
 		- git push origin file_feature
 	- from development
+		- add/commit?
 		- (gitHub
 			- Pull request)
 		- OR
