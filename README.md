@@ -9,11 +9,11 @@ Links:
 - Project:
 	- GitHub
 		- https://github.com/madhat5/Personal-Assitant_appProject
-	- Heroku
+	- Wireframes
 		- 
 	- Trello link
 		- https://trello.com/b/79qQIpKD/wdi-project-4a-jmny
-	- Wireframes
+	- Heroku
 		- 
 
 ---
@@ -84,7 +84,10 @@ Models:
 		- (sum of goal.score)
 - goal
 	- title: String
-	- objectives: {String, boolean}
+	- objectives: 
+		- description: String, 
+		- completed: boolean,
+		- date added to daily events
 	- score: Number 
 		- (3pts for completing day1, 1pt day2; 0 pts and dropped day3)
 		- (each goal has score)
@@ -94,35 +97,31 @@ User story:
 - MOAR MODALS!!!
 
 - landing page:
-	- map
-		- modal for location details
-		- cannot add location until logged in
 	- log in button
-		- > opens user page
+		- > opens stormpath login form as modal
 	- register buton
-		- > opens register form
+		- > opens stormpath register form as modal
+	- # of goals and # of goals completed
 
 - user page
-	- map
-		- modal dislpays
-			- task
-			- location
-			- details
-			- button add to to-do
-	- to do list (div)
-		- task
-		- button complete
-			- complete pushes to Done
-	- user updates button
-		displays form 
-		- edit
-		- 
+	- user edit button
+		- > opens stormpath register form as modal
 	- logout
+	- 4 (circular) divs, click to:
+		- > open goal library as modal, click goal to:
+			- > open goal objectives as full in modal, click to:
+				- add to daily events
+				- redirect to user page (close modal)
 
 +features:
 
-- 
+- change div colors per goal/objective status
+	- green: active
+	- yellow: missed 1 day
 
+- make each div HWR specific?
+
+- share to social media?
 
 ---
 ---
