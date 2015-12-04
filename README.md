@@ -101,6 +101,8 @@ User story:
 - landing page:
 	- log in button
 		- > opens stormpath login form as modal
+	- register form
+	- tutorial button
 	- register buton
 		- > opens stormpath register form as modal
 	- # of goals and # of goals completed
@@ -108,11 +110,11 @@ User story:
 - user page
 	- user edit button
 		- > opens stormpath register form as modal
-	- logout
-	- 4 (circular) divs, click to:
-		- > open goal library as modal, click goal to:
-			- > open goal objectives as full in modal, click to:
-				- add to daily events
+	- logout button
+	- tutorial button
+	- (circular) divs, click to:
+		- > open goal form to:
+				- add goal and steps
 				- redirect to user page (close modal)
 
 +features:
@@ -132,7 +134,7 @@ User story:
 ---
 App Build Steps:
 
-- yo ...
+- yo angular-fullstack goal-app
 
 - stormpath
 - angular
