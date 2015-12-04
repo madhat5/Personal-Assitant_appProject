@@ -57,7 +57,6 @@ Deployment flow: (WORK WITH KRYSTEN)
 	- from development
 		- git checkout -b file_feature
 - By end of day 
-	- >>>1st method:<<<
 	- from branch
 		- git add .
 		- git commit -m "update details"
