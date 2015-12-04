@@ -72,23 +72,6 @@ Deployment flow: (WORK WITH KRYSTEN)
 		- Pull request)
 	- OR
 	- (git push origin master)
-	- >>>2nd method:<<<
-	- from branch
-		- git add .
-		- git commit -m "update details"
-		- git push origin file_feature
-		- git checkout development
-	- from development
-		- add/commit?
-		- (gitHub
-			- Pull request)
-		- OR
-		- (git push origin development)
-	- from master?
-		- (gitHub
-			- Pull request)
-		- OR
-		- (git push origin master)
 
 ---
 MVP
