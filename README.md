@@ -13,6 +13,8 @@ Links:
 		- https://moqups.com/#!/edit/madhat5/jR69snL3
 	- Trello link
 		- https://trello.com/b/79qQIpKD/wdi-project-4a-jmny
+	- Yeoman generator
+		- https://github.com/DaftMonk/generator-angular-fullstack
 	- Heroku
 		- 
 
@@ -32,12 +34,12 @@ Timeline goals: (start by)
 
 - Wed 12/2 --x--
 	- Start planning mini-app (Rails or Mean) today
-- Sat 12/5
+- Sat 12/5 --o--
 	- 1st mini-app finished during the weekend
 - Sun 12/6 --o--
 	- Start planning 2nd mini-app 
 - Wed 12/9
-	- Mean app finished 
+	- 2nd app finished 
 - Thu 12/10
 	- Final project planning
 - Thu 12/17	
@@ -125,7 +127,100 @@ User story:
 
 - integrate into calendar (finds empty time slots and injects objective)
 
+
+---
+---
+App Build Steps:
+
+- yo ...
+
+- stormpath
+- angular
+- cookie parser
+
+
+
+- models --ox--
+	- mkdir models
+		- touch models/user.js
+		- touch models/task.js
+	- server.js
+		- var User = require('./models/user');
+		- var Task = require('./models/task');
+
+- test connection --o--
+	- setup basic route
+	- setup basic index.html/app.js
+	- launch server (nodemon)
+
+- CDN
+	- Handlebars URL --x--
+	- js-cookie URL --x--
+		
+- model build --o--
+	- user.js
+		- var mongoose = require('mongoose');
+		- var userSchema = new mongoose.Schema({ ... });
+			- link taskSchema
+		- var User = mongoose.model('User', userSchema);
+		- module.exports = User;
+		- embed tasks (ref Complaints)
+	- task.js
+		- var mongoose = require('mongoose');
+		- var taskSchema = new mongoose.Schema({ ... });
+		- var Task = mongoose.model('Task', taskSchema);
+		- module.exports = Task;
+		- ?embed users?
+
+- Story build --o--
+	- server: 
+		- server.js 
+			- TEST 
+	- client: --o--
+		- TEST
+		- index.html
+		- app.js
+			- user 
+				- signup
+				- update
+				- delete
+			- task
+				- all
+				- new
+				- delete (auto delete when done)
+
+- CSS --o--
+
+- node server.js
+
+
+---
+---
+Reference
+
+- Git merging
+	- https://github.com/ga-students/wdi_lettuce_students/blob/master/w08/d02/INSTRUCTOR/git_solo.md
+
+- Scaffolding (Yeoman)
+	- http://blog.teamtreehouse.com/improving-development-workflow-yeoman
+
+- User auth (Stormpath)
+	- https://stormpath.com/blog/build-nodejs-express-stormpath-app/
+
+
+
+---
+---
+Comments/Notes:
+
+- Link user auth with user model 
+
+
+---
+---
 User Research:
+
+Rnd.1
 
 - User questions (min 5 users):
 	- do you set goals?
@@ -182,7 +277,7 @@ user2 (MD):
 - build test
 	- cancel button on join us form?
 	- back to goals button on objectives form
-	- reference Mint 
+	- reference Mint for usability
 	- change language to more intuitive
 	- prompt user for goals and objectives
 		- after login, better prompt (mini intro)
@@ -277,92 +372,5 @@ user5 (TP):
 		- little description or user interactivity on landing
 	- visalize all goals 
 
-
----
----
-App Build Steps:
-
-- yo ...
-
-- stormpath
-- angular
-- cookie parser
-
-
-
-- models --ox--
-	- mkdir models
-		- touch models/user.js
-		- touch models/task.js
-	- server.js
-		- var User = require('./models/user');
-		- var Task = require('./models/task');
-
-- test connection --o--
-	- setup basic route
-	- setup basic index.html/app.js
-	- launch server (nodemon)
-
-- CDN
-	- Handlebars URL --x--
-	- js-cookie URL --x--
-		
-- model build --o--
-	- user.js
-		- var mongoose = require('mongoose');
-		- var userSchema = new mongoose.Schema({ ... });
-			- link taskSchema
-		- var User = mongoose.model('User', userSchema);
-		- module.exports = User;
-		- embed tasks (ref Complaints)
-	- task.js
-		- var mongoose = require('mongoose');
-		- var taskSchema = new mongoose.Schema({ ... });
-		- var Task = mongoose.model('Task', taskSchema);
-		- module.exports = Task;
-		- ?embed users?
-
-- Story build --o--
-	- server: 
-		- server.js 
-			- TEST 
-	- client: --o--
-		- TEST
-		- index.html
-		- app.js
-			- user 
-				- signup
-				- update
-				- delete
-			- task
-				- all
-				- new
-				- delete (auto delete when done)
-
-- CSS --o--
-
-- node server.js
-
-
----
----
-Reference
-
-- Git merging
-	- https://github.com/ga-students/wdi_lettuce_students/blob/master/w08/d02/INSTRUCTOR/git_solo.md
-
-- Scaffolding (Yeoman)
-	- http://blog.teamtreehouse.com/improving-development-workflow-yeoman
-
-- User auth (Stormpath)
-	- https://stormpath.com/blog/build-nodejs-express-stormpath-app/
-
-
-
----
----
-Comments/Notes:
-
-- Link user auth with user model 
 
 
